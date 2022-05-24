@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".AirRiskPop">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lytRisks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:cardBackgroundColor="@color/white"
+        android:backgroundTint="@color/white"
+        card_view:cardCornerRadius="0dp"
+        android:visibility="visible"
+        app:cardElevation="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabExitRisk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:elevation="0dp"
+                android:src="@drawable/ic_back_arrow"
+                app:fabSize="mini"
+                android:background="@color/white"
+                app:backgroundTint="@color/colorPrimary"
+                />
+            <TextView
+                android:id="@+id/lblRiesgos"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escala de riesgos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp" />
+            <View
+                android:layout_width="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/lblRiesgos"
+                android:layout_height="1dp"
+                android:id="@+id/linebien2"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimary"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@color/colorPrimary"
+                card_view:cardCornerRadius="7dp"
+                android:layout_toStartOf="@id/linebien2"
+                android:layout_below="@id/lblRiesgos"
+                android:layout_marginBottom="20dp"
+                app:cardElevation="2dp"
+                />
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/escalabien"
+                    android:layout_below="@id/linebien2">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnRisksBien"
+                        android:layout_height="60dp"
+                        android:layout_width="5dp"
+                        app:cardBackgroundColor="@color/bien"
+                        android:backgroundTint="@color/bien"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        card_view:cardCornerRadius="3dp"
+                        app:cardElevation="0dp"/>
+                    <TextView
+                        android:id="@+id/txtRiskBien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Se considera que el riesgo es mínimo o nulo."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textSize="15sp"
+                        android:layout_toEndOf="@id/btnRisksBien"
+                        android:layout_alignParentTop="true"
+                        android:padding="10dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/escalaregular"
+                    android:layout_below="@id/escalabien">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnRisksRegular"
+                        android:layout_width="5dp"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/aceptable"
+                        android:backgroundTint="@color/aceptable"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        card_view:cardCornerRadius="3dp"
+                        app:cardElevation="0dp"/>
+                    <TextView
+                        android:id="@+id/txtRiskRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Por Ozono (O3), las personas sensibles pueden experimentar síntomas respiratorios
+    (asmáticos).
+    Por partículas suspendidas iguales o menores a 10 micrómetros (PM10) y partículas
+    suspendidas iguales o menores a 2.5 micrómetros (PM2.5), puede presentarse
+    agravamiento de enfermedad pulmonar y cardiaca en personas con enfermedad
+    cardiopulmonar y adultos mayores."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textSize="15sp"
+                        android:layout_toEndOf="@id/btnRisksRegular"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="10dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/escalarmala"
+                    android:layout_below="@id/escalaregular">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnRisksMala"
+                        android:layout_width="5dp"
+                        android:layout_height="350dp"
+                        app:cardBackgroundColor="@color/mala"
+                        android:backgroundTint="@color/mala"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        card_view:cardCornerRadius="3dp"
+                        app:cardElevation="0dp"/>
+                    <TextView
+                        android:id="@+id/txtRiskMala"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Para todos los contaminantes criterio existe probabilidad de disminución en la capacidad
+    pulmonar en personas sanas.
+    Incremento en la probabilidad de aparición de síntomas respiratorios en personas
+    sensibles (niños, ancianos, personas con deficiencias nutricionales, personas que
+    realizan actividades en exteriores, ciclistas, trabajadores).
+    En personas con enfermedades respiratorias (EPOC, asma) y cardiacas (angina de
+    pecho) hay aumento en la probabilidad de agravamiento y disminución en la tolerancia
+    de la actividad física, así como mayor probabilidad de muertes prematuras en personas
+    con enfermedad cardiaca o pulmonar."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textSize="15sp"
+                        android:layout_toEndOf="@id/btnRisksMala"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/escalarmuymala"
+                    android:layout_below="@id/escalarmala">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnRisksMuyMala"
+                        android:layout_width="5dp"
+                        android:layout_height="350dp"
+                        app:cardBackgroundColor="@color/muy_mala"
+                        android:backgroundTint="@color/muy_mala"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        card_view:cardCornerRadius="3dp"
+                        app:cardElevation="0dp"/>
+                    <TextView
+                        android:id="@+id/txtRiskMuyMala"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Para todos los contaminantes criterio, mayor probabilidad de presencia de síntomas
+    respiratorios en población general. Agravamiento de síntomas respiratorios en
+    poblaciones sensibles (niños, adultos mayores, personas que trabajan en exteriores,
+    ciclistas) y en personas con enfermedad pulmonar (EPOC y asma). Incremento en
+    síntomas cardiovasculares, como dolor precordial, en personas enfermas del corazón,
+    así como mayor probabilidad de muertes prematuras en personas con enfermedad
+    cardiaca o pulmonar."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textSize="15sp"
+                        android:layout_toEndOf="@id/btnRisksMuyMala"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/escalarextre"
+                    android:layout_below="@id/escalarmuymala">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnRisksExtre"
+                        android:layout_width="5dp"
+                        android:layout_height="350dp"
+                        app:cardBackgroundColor="@color/extremadamente_mala"
+                        android:backgroundTint="@color/extremadamente_mala"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        card_view:cardCornerRadius="3dp"
+                        app:cardElevation="0dp"/>
+                    <TextView
+                        android:id="@+id/txtRiskExtre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Para todos los contaminantes criterio, incremento en la probabilidad de síntomas
+    severos respiratorios en población general.
+    Serios efectos respiratorios y agravamiento de síntomas en personas sensibles (niños,
+    adultos mayores, persona con deficiencias nutricionales) y en personas con enfermedad
+    pulmonar (asma y EPOC). Agravamiento de síntomas cardiovasculares en enfermos del
+    corazón (como angina de pecho) e incremento en la probabilidad de muerte prematura
+    en personas con enfermedad pulmonar y cardiaca."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textSize="15sp"
+                        android:layout_toEndOf="@id/btnRisksExtre"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp" />
+                </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.core.widget.NestedScrollView>

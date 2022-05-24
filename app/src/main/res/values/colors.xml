@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0E2C52</color>
+    <color name="colorPrimaryDark">#042041</color>
+    <color name="colorAccent">#b1c4d2</color>
+    <color name="grey">#ACACAC</color>
+    <color name="greyDark">#7E7E7E</color>
+    <color name="greylight">#E9E9E9</color>
+    <color name="bien">#01e400</color>
+    <color name="aceptable">#ffff00</color>
+    <color name="mala">#ff7e00</color>
+    <color name="muy_mala">#fe0000</color>
+    <color name="extremadamente_mala">#8e3e97</color>
+    <color name="white">#ffffff</color>
+    <color name="bluelight">#b1c4d2</color>
+</resources>

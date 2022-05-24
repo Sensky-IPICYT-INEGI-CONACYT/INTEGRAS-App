@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">IntegrAS</string>
+    <string name="large_text">27/11/2019 07:56
+    </string>
+    <string name="action_settings">Descargar</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_historial">Historial</string>
+    <string name="title_activity_main">Hoy</string>
+    <string name="permissions_acepted">Permisos completos</string>
+    <string name="permissions_denied">Faltan permisos</string>
+    <string name="splash_starting">Varificando permisos...</string>
+    <string name="title_activity_principal">IntegrAS</string>
+    <string name="tab_text_1">Aire</string>
+    <string name="tab_text_2">UV</string>
+    <string name="title_activity_station_information">StationInformation</string>
+</resources>
